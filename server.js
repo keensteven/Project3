@@ -1,4 +1,5 @@
 //dependencies
+require("dotenv").config();
 const express = require("express");
 const passport = require("./config/passport");
 const routes = require("./routes");
@@ -16,8 +17,12 @@ const db = require("./models");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 // We need to use sessions to keep track of our user's login status
-app.use(session({ secret: process.env.SESSION_SECRET || "keyboard cat", resave: false, saveUninitialized: false }));
+app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
 app.use(passport.session());
 

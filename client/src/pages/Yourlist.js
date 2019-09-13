@@ -5,9 +5,17 @@ import ProductCard from "../components/ProductCard";
 import products from "../productlist.json";  //since this is my list we need to change this from looping through the json file to looping through the items in the db
 import { Row } from "reactstrap";
 
-class Yourlist extends Component {
-
-  
+class Yourlist extends Component {  
+  // constructor(props){
+  //   super(props)
+  // }
+  // componentDidMount = () => {
+  //   if(this.props.isAuthenticated === true){
+  //     alert("is authenticated")
+  //   }else{
+  //     alert("Not authenticated")
+  //   }
+  // }
 
   render() {
     return (
