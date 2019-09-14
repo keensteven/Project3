@@ -32,6 +32,7 @@ class Login extends Component {
         
        this.props.loginUser(user)
        sessionStorage.setItem("isAuthenticated", true);
+       sessionStorage.setItem("userId", user.id);
         window.location.replace("/yourlist");
       })
         .catch(err => {

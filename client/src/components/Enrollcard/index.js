@@ -1,42 +1,43 @@
 import React from "react";
 import "./style.css";
 
-function Logincard() {
+function EnrollmentCard({ handleOnUpdate, handleFormSubmit }) {
   return (
     <div className="center">
 
-<div className="border border-secondary">
-  <h5 className="card-header">Enroll</h5>
-  <div className="card-body">
-  <form>
-  <div className="form-group">
-    <label for="exampleFormControlInput1">First Name</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" />
-  </div>
-  <div className="form-group">
-    <label for="exampleFormControlInput1">Last Name</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" />
-  </div>
-  <div className="form-group">
-    <label for="exampleFormControlInput1">Email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" />
-  </div>
-  <div className="form-group">
-    <label for="exampleFormControlInput1">Password</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" />
-    <a href="#" className="btn btn-primary mt-4">Submit</a>
+      <div className="border border-secondary">
+        <h5 className="card-header">Enroll</h5>
+        <div className="card-body">
+          <form>
+            <div className="form-group">
+              <label htmlFor="firstName">First Name</label>
+              <input type="text" name="firstName" className="form-control" id="firstName" onChange={handleOnUpdate} />
+            </div>
+            <div className="form-group">
+              <label htmlFor="lastName">Last Name</label>
+              <input type="text" name="lastName" className="form-control" id="lastName" onChange={handleOnUpdate} />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" className="form-control" id="email" onChange={handleOnUpdate} />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input type="password" name="password" className="form-control" id="password" onChange={handleOnUpdate} />
 
-  </div>
-  </form>
-  </div>
-</div>
+              <button className="btn btn-primary mt-4" onClick={handleFormSubmit}>Submit</button>
 
-    
+            </div>
+          </form>
+        </div>
+      </div>
 
 
-  </div>
+
+
+    </div>
 
   );
 }
 
-export default Logincard;
+export default EnrollmentCard;
