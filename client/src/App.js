@@ -13,19 +13,19 @@ import Home from './pages/Home'
 
 // const PrivateRoute = ({component: Component, ...rest}) => (
 //   <Route {...rest} render={()=> (
-    
+
 //   )} />
 // )
 
-class App extends Component  {
+class App extends Component {
   state = {
     isAuthenticated: false,
-    user: {}    
-  }; 
+    user: {}
+  };
   login = (user) => {
-    if(user.email && user.id){
-      this.setState({user, isAuthenticated: true}) 
-    }      
+    if (user.email && user.id) {
+      this.setState({ user, isAuthenticated: true })
+    }
   }
   render() {
     return (
@@ -35,10 +35,10 @@ class App extends Component  {
           <Wrapper>
             <Route exact path="/" component={Products} />
             <Route exact path="/products" component={Products} />
-             <Route exact path="/yourlist" component={Yourlist} /> 
-          <Route exact path='/login' component={() => <Login loginUser={this.login}/>}/>
-          <Route exact path='/enroll' component={Enroll} />   
-          <Route exact path='/home' component={Home} /> 
+            <Route exact path="/yourlist" component={Yourlist} />
+            <Route exact path='/login' component={() => <Login loginUser={this.login} />} />
+            <Route exact path='/enroll' component={Enroll} />
+            <Route exact path='/home' component={Home} />
           </Wrapper>
           <Footer />
         </div>
@@ -46,7 +46,7 @@ class App extends Component  {
     );
 
   }
-  
+
 }
 
 export default App;
