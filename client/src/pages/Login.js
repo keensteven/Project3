@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Logincard from "../components/Logincard";
 import API from "../utils/API";
 
-
 class Login extends Component {
-  state = {
+  constructor(props){
+    super(props)
+         
+  }
+    state = {
     email: "",
     password: ""
   };  
@@ -22,8 +25,13 @@ class Login extends Component {
         email: this.state.email,
         password: this.state.password
       }).then(res => {
-        console.log(res)
        
+        let user = res.data;
+     
+        delete user.password;
+        
+       this.props.loginUser(user)
+       sessionStorage.setItem("isAuthenticated", true);
         window.location.replace("/yourlist");
       })
         .catch(err => {
