@@ -9,8 +9,8 @@ function Logincard({handleOnUpdate,handleFormSubmit}) {
   <h5 className="card-header">Log In</h5>
   <div className="card-body">
   <form>
-  <div className="form-group">
-    <label htmlFor="email">User Name</label>
+  <div className="form-group pt-2">
+    <label htmlFor="email">Email</label>
     <input type="email" name="email" className="form-control" id="email" onChange={handleOnUpdate} />
   </div>
   <div className="form-group">    
