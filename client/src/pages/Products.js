@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Container from "../components/Container";
+import Wrapper from "../components/Wrapper";
+import Photowrapper from "../components/Photowrapper";
 import ProductCard from "../components/ProductCard";
 import products from "../productlist.json";
 import { Row } from 'reactstrap';
@@ -13,14 +14,12 @@ function Products() {
         <h1>Wish List</h1>
         <h2>Buy Something Special</h2>
       </Hero>
-      <Container style={{ marginTop: 50 }}>
-        <Row>
+      <Photowrapper style={{ marginTop: 50 }}>
           {products.map((product) => {
             return(<ProductCard key={product.id} product={product} />)
           })        
           }
-        </Row>
-      </Container>
+      </Photowrapper>
     </div>
   );
 }

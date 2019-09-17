@@ -6,6 +6,8 @@ import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import Photowrapper from "./components/Photowrapper";
+
 import './App.css';
 import Enroll from './pages/Enroll';
 import Home from './pages/Home'
