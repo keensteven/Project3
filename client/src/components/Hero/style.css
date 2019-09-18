@@ -24,17 +24,86 @@
 
 .hero h1, .hero h2 {
   color: white;
+  line-height: 100px;
 }
 
-.hero h1 {
+/* .hero h1 {
   font-size: 130px;
   padding-top: 140px;
   margin-top: 0;
   font-family: 'Rochester', cursive;
 
-}
+} */
 
-.hero h2 {
+/* .hero h2 {
   font-family: 'Rochester', cursive;
   font-size: 40px;
+} */
+
+@media screen and (min-width: 100px) {
+  .hero h1 {
+    font-size: 80px;
+    padding-top: 170px;
+    margin-top: 0;
+    font-family: 'Rochester', cursive;
+    color: white;
+    line-height: 60px;
+  }
+  .hero h2 {
+    font-family: 'Rochester', cursive;
+    font-size: 26px;
+    color: white;
+    line-height: 65px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .hero h1 {
+    font-size: 100px;
+    padding-top: 170px;
+    margin-top: 0;
+    font-family: 'Rochester', cursive;
+    color: white;
+    line-height: 80px;
+  }
+  .hero h2 {
+    font-family: 'Rochester', cursive;
+    font-size: 36px;
+    color: white;
+    line-height: 75px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .hero h1 {
+    font-size: 130px;
+    padding-top: 160px;
+    margin-top: 0;
+    font-family: 'Rochester', cursive;
+    color: white;
+    line-height: 100px;
+  }
+  .hero h2 {
+    font-family: 'Rochester', cursive;
+    font-size: 30px;
+    color: white;
+    line-height: 65px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero h1 {
+    font-size: 140px;
+    padding-top: 162px;
+    margin-top: 0;
+    font-family: 'Rochester', cursive;
+    color: white;
+    line-height: 110px;
+  }
+  .hero h2 {
+    font-family: 'Rochester', cursive;
+    font-size: 32px;
+    color: white;
+    line-height: 70px;
+  }
 }
