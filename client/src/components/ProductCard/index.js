@@ -16,7 +16,13 @@ function ProductCard(props) {
           </p>
               {props.product.price} 
           <br />
-          <button type="button" className="btn btn-secondary">Add to Wish List</button>
+          <button 
+            type="button" 
+            className="btn btn-secondary" 
+            data-id={props.product.id}
+            data-name={props.product.name}
+            data-image={props.product.image}
+            onClick={props.handleAddToList}>Add to Wish List</button>
         </div>
       </div>
 
