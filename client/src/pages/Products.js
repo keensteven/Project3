@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Hero from "../components/Hero";
-import Wrapper from "../components/Wrapper";
+// import Wrapper from "../components/Wrapper";
 import Photowrapper from "../components/Photowrapper";
 import ProductCard from "../components/ProductCard";
 import products from "../productlist.json";
 import { Row } from 'reactstrap';
 import API from "../utils/API";
+
 
 
 class Products extends Component {
