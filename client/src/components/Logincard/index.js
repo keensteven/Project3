@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Logincard({handleOnUpdate,handleFormSubmit}) {
+function Logincard({ handleOnUpdate,handleFormSubmit }) {
   return (
     <div className="center">
 
@@ -17,7 +17,7 @@ function Logincard({handleOnUpdate,handleFormSubmit}) {
     <label htmlFor="password">Password</label>
     <input type="password"  name="password" className="form-control" id="password" onChange={handleOnUpdate} />   
     <button className="btn btn-primary mt-4" onClick={handleFormSubmit}>Start Wishing</button>
-
+    <div className="g-signin2" data-onsuccess="onSignIn"></div>                 
   </div>
   </form>
   </div>

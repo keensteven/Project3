@@ -66,8 +66,8 @@ class Enroll extends Component {
         </ul>
 
         
-        
       </div>
+
     );
   }
 }
