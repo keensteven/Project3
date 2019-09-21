@@ -35,7 +35,7 @@ class Products extends Component {
     return (
       <div>
         <Hero backgroundImage="/img/dandelion28.jpg">
-          <h1>WISH List</h1>
+          <h1>Wish List</h1>
           <h2>Buy Something Special</h2>
         </Hero>
         <Photowrapper>
