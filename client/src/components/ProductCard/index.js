@@ -7,7 +7,6 @@ function ProductCard(props) {
       <div className="card">
         <div className="img-container">
           <img alt={props.product.name} src={props.product.image} />
-          
         </div>
         <div className="content">
           <p>
@@ -17,7 +16,6 @@ function ProductCard(props) {
               {props.product.price} 
           <br />
           <button 
-            type="button" 
             className="btn btn-secondary" 
             data-id={props.product.id}
             data-name={props.product.name}
