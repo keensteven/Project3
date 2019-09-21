@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Enrollcard from "../components/Enrollcard"
 import API from "../utils/API";
+import Container from "../components/Container"
+
 
 class Enroll extends Component {
   state = {
@@ -30,9 +32,9 @@ class Enroll extends Component {
 
   render() {
     return (
-      <div className="container">
+      <Container>
         <Enrollcard handleOnUpdate={this.handleOnUpdate} handleFormSubmit={this.handleFormSubmit} />
-      </div>
+      </Container>
     );
   }
 }

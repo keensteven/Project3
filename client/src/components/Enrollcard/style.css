@@ -2,14 +2,6 @@
     text-align: left;
 }
 
-.center {
-    margin-top: 50px;
-    width: 358px;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .border-secondary {
 border-color: #dfdfdf !important;
 }

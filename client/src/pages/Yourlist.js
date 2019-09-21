@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Hero from "../components/Hero";
 import Photowrapper from "../components/Photowrapper";
-import ProductCard from "../components/ProductCard";
+import ListCard from "../components/ListCard";
 import products from "../productlist.json";  //since this is my list we need to change this from looping through the json file to looping through the items in the db
 
 class Yourlist extends Component {  
@@ -25,7 +25,7 @@ class Yourlist extends Component {
         </Hero>
         <Photowrapper style={{ marginTop: 50 }}>
           {products.map((product) => {
-              return(<ProductCard key={product.id} product={product} />)
+              return(<ListCard key={product.id} product={product} />)
             })}
         </Photowrapper>
       </div>

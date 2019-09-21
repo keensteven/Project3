@@ -3,7 +3,7 @@ import "./style.css";
 
 function EnrollmentCard({ handleOnUpdate, handleFormSubmit }) {
   return (
-    <div className="center">
+    <div className="mt-5">
 
       <div className="border border-secondary">
         <h5 className="card-header">Enroll</h5>

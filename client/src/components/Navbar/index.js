@@ -8,19 +8,18 @@ import "./style.css";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+      {/* <Link className="navbar-brand" to="/"> */}
       <Link className="navbar-brand" to="/">
+
         Wish List
       </Link>
       <div>
         <ul className="navbar-nav">
           <li className="nav-item pl-2">
             <Link
-              to="/"
+              to="/products"
               className={
-                window.location.pathname === "/" || window.location.pathname === "/products"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
+                window.location.pathname === "/products" ? "nav-link active" : "nav-link"}
             >
               Products
             </Link>
