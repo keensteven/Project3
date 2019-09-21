@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Logincard from "../components/Logincard";
 import API from "../utils/API";
+import Container from "../components/Container";
+
 
 class Login extends Component {
   constructor(props){
@@ -44,9 +46,9 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="container">
+      <Container>
         <Logincard handleOnUpdate={this.handleOnUpdate} handleFormSubmit={this.handleFormSubmit} />
-      </div>
+      </Container>
     );
   }
 }

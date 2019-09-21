@@ -1,9 +1,10 @@
 .container {
-    width: 1100px;
-    background-color: brown;
+    /* width: 1100px; */
+    /* background-color: brown; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /* align-content: flex-start; */
     /* justify-content: center; */
 }
