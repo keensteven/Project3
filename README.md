@@ -1,5 +1,5 @@
 # Wish List Application
-Have you ever wished you could give your friends and family a list of what to get you for holiday?Or wished you had one of those lists for your children? The Wish List app was made for you! With a few simple clicks you can curate a list to send to family members to take the guessing out of gift giving.
+Have you ever wished you could give your friends and family a list of what to get you for holiday Or wished you had one of those lists for your children? The Wish List app was made for you! With a few simple clicks you can curate a list to send to family members to take the guessing out of gift giving.
 
 # DEPLOYED SITE 
 https://wishlist2019.herokuapp.com/
