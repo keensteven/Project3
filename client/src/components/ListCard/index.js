@@ -5,12 +5,12 @@ function ListCard(props) {
   return (
       <div className="card">
         <div className="img-container">
-          <img alt={props.product.name} src={props.product.image} />
+          <img alt={props.product.product_Name} src={props.product.product_Image} />
           
         </div>
         <div className="content">
           <p>
-              <strong>Name:</strong> {props.product.name}
+              <strong>Name:</strong> {props.product.product_Name}
             
           </p>
               {props.product.price} 
@@ -18,9 +18,9 @@ function ListCard(props) {
           <button 
             type="button" 
             className="btn btn-secondary" 
-            data-id={props.product.id}
-            data-name={props.product.name}
-            data-image={props.product.image}
+            data-id={props.product.product_Id}
+            data-name={props.product.product_Name}
+            data-image={props.product.product_Image}
             // onClick={props.handleAddToList}>Purchase</button>
             >Purchase</button>
 

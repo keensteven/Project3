@@ -10,12 +10,12 @@ module.exports = function(sequelize, DataTypes) {
       password: DataTypes.STRING
     });
   
-    User.associate = function(models) {
+    // User.associate = function(models) {
     
-      User.hasMany(models.Registry, {
-        onDelete: "cascade"
-      });
-    };
+    //   User.hasMany(models.Registry, {
+    //     onDelete: "cascade"
+    //   });
+    // };
      // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);

@@ -18,26 +18,31 @@ class Products extends Component {
     console.log(e.target)
 
     const product = {
-      productId: e.target.getAttribute("data-id"),
-      productName: e.target.getAttribute("data-name"),
-      productImage: e.target.getAttribute("data-image"),
-      userId: sessionStorage.getItem("userId")
+      product_Id: e.target.getAttribute("data-id"),
+      product_Name: e.target.getAttribute("data-name"),
+      product_Image: e.target.getAttribute("data-image"),
+      user_Id: sessionStorage.getItem("userId")
     }
   
     console.log(product)
+    API.createRegistry(product).then(res => console.log(res) ).catch(err => console.log(err))
     
   }
+
+  
 
   render(){
     return (
       <div>
         <Hero backgroundImage="/img/dandelion28.jpg">
-          <h1>Wish List</h1>
+          <h1>MISH List</h1>
           <h2>Buy Something Special</h2>
         </Hero>
         <Photowrapper>
             {products.map((product) => {
-              return(<ProductCard key={product.id} handleAddToList={this.handleAddToList} product={product} />)
+              return(<ProductCard key={product.id} 
+                handleAddToList={this.handleAddToList} 
+                product={product} />)
             })        
             }
         </Photowrapper>

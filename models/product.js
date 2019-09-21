@@ -6,11 +6,11 @@ module.exports = function (sequelize, DataTypes) {
     image: DataTypes.STRING,
     price: DataTypes.DOUBLE
   });
-  Product.associate = function (models) {
-    Product.hasMany(models.Registry, {
-      onDelete: "cascade"
-    })
-  };
+  // Product.associate = function (models) {
+  //   Product.hasMany(models.Registry, {
+  //     onDelete: "cascade"
+  //   })
+  // };
 
 
   return Product;
