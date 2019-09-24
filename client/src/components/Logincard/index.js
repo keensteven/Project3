@@ -17,8 +17,8 @@ function Logincard({handleOnUpdate,handleFormSubmit}) {
     <label htmlFor="password">Password</label>
     <input type="password"  name="password" className="form-control" id="password" onChange={handleOnUpdate} />   
     <button className="btn btn-primary mt-4" onClick={handleFormSubmit}>Start Wishing</button>
-
   </div>
+  <div className="g-signin2" data-onsuccess="onSignIn"></div>   
   </form>
   </div>
 </div>
