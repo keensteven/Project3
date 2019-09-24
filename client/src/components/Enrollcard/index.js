@@ -24,10 +24,9 @@ function EnrollmentCard({ handleOnUpdate, handleFormSubmit }) {
             <div className="form-group">
               <label htmlFor="password">Password</label>
               <input type="password" name="password" className="form-control" id="password" onChange={handleOnUpdate} />
-
               <button className="btn btn-primary mt-4" onClick={handleFormSubmit}>Submit</button>
-
             </div>
+            <div className="g-signin2" data-onsuccess="onSignIn"></div>   
           </form>
         </div>
       </div>
