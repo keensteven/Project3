@@ -2,17 +2,24 @@ import React, { Component } from 'react';
 import Logincard from "../components/Logincard";
 import API from "../utils/API";
 import Container from "../components/Container";
+import { Alert } from 'reactstrap';
+
 
 
 class Login extends Component {
   constructor(props){
     super(props)
          
-  }
-    state = {
+    this.state = {
     email: "",
-    password: ""
+    password: "",
+    alertVisibility: false
   };  
+  this.onDismiss = this.onDismiss.bind(this);
+  }
+  onDismiss() {
+    this.setState({ alertVisibility: false });
+  };
   handleOnUpdate = e => {
     const { name, value } = e.target;
 
@@ -38,17 +45,23 @@ class Login extends Component {
         window.location.replace("/yourlist");
       })
         .catch(err => {
-          console.log(err)
-          
+          console.log(err);
+          //alert("This email address and password combination does not match a user in our records. Please review and try again.");          
+          this.setState({ alertVisibility: true });  
         });
     }
   };
 
   render() {
     return (
+      <div>
       <Container>
         <Logincard handleOnUpdate={this.handleOnUpdate} handleFormSubmit={this.handleFormSubmit} />
       </Container>
+      <Alert color="secondary" isOpen={this.state.alertVisibility} toggle={this.onDismiss} fade={false}>
+      This email address and password combination does not match a user in our records. Please review and try again.
+      </Alert>
+      </div>
     );
   }
 }
