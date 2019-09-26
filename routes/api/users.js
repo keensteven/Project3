@@ -16,9 +16,25 @@ router.post('/status',passport.authenticate("local"), function (req, res) {
     res.json(req.user);
 });
 
-router
-.route('/registry')
-.post(registryController.createRegistry)
+// router
+// .route('/registry')
+// .post(registryController.createRegistry)
+
+// router
+// .route('/yourList/:id')
+// .get(registryController.FindByUserID)
+
+router.post('/registry',passport.authenticate("local"),function(req,res){
+    console.log(req.user)
+
+    if(req.user){
+        registryController.createRegistry
+    }else{
+        alert("not logged in")
+    }
+    
+});
+
 
 router
 .route('/yourList/:id')
