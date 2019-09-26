@@ -36,6 +36,7 @@ class Login extends Component {
       }).then(res => {
        
         let user = res.data;
+        console.log(user)
      
         delete user.password;
         
