@@ -55,12 +55,13 @@ class Login extends Component {
   render() {
     return (
       <div>
-      <Container>
-        <Logincard handleOnUpdate={this.handleOnUpdate} handleFormSubmit={this.handleFormSubmit} />
-      </Container>
       <Alert color="secondary" isOpen={this.state.alertVisibility} toggle={this.onDismiss} fade={false}>
       This email address and password combination does not match a user in our records. Please review and try again.
       </Alert>
+      <Container>
+        <Logincard handleOnUpdate={this.handleOnUpdate} handleFormSubmit={this.handleFormSubmit} />
+      </Container>
+
       </div>
     );
   }
