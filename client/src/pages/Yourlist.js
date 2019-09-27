@@ -14,7 +14,7 @@ class Yourlist extends Component {
   //     alert("is authenticated")
   //   }else{
   //     alert("Not authenticated")
-  //   }
+  //   } 
   // }
 
   state= {
