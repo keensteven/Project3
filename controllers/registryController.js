@@ -8,7 +8,7 @@ module.exports = {
 
     },
     FindByUserID : function(req,res){
-        console.log("find all");
+        
       db.Registry
       .findAll({
           where:{

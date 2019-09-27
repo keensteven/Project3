@@ -20,6 +20,13 @@ router
 .route('/registry')
 .post(registryController.createRegistry)
 
+// router
+// .route('/yourList/:id')
+// .get(registryController.FindByUserID)
+
+
+
+
 router
 .route('/yourList/:id')
 .get(registryController.FindByUserID)

@@ -15,15 +15,8 @@ function ListCard(props) {
           </p>
               {props.product.price} 
           <br />
-          <button 
-            type="button" 
-            className="btn btn-secondary" 
-            data-id={props.product.product_Id}
-            data-name={props.product.product_Name}
-            data-image={props.product.product_Image}
-            // onClick={props.handleAddToList}>Purchase</button>
-            >Purchase</button>
-
+          <a className="btn btn-primary" href="https://www.amazon.com" target="_blank" role="button">Purchase</a>
+          
         </div>
       </div>
 
