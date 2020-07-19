@@ -27,7 +27,7 @@
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
+    "express-session": "^1.17.1",
     "if-env": "^1.0.4",
     "mysql": "^2.18.1",
     "mysql2": "^1.7.0",
@@ -35,11 +35,11 @@
     "passport-local": "^1.0.0",
     "react-alert": "^5.5.0",
     "react-alert-template-basic": "^1.0.0",
-    "sequelize": "^5.21.6"
+    "sequelize": "^5.22.3"
   },
   "devDependencies": {
     "concurrently": "^4.1.2",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0"
+    "eslint-plugin-react": "^7.20.3"
   }
 }
